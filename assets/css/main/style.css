@@ -61,13 +61,22 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-#container {
+.myclass{
+  font-size: 50px;
+}
+
+
+#container{
   padding: 32px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: auto 0;
 }
+
+ #details{
+  display: flex;
+ } 
 
 #container .profile_link {
   margin-bottom: 32px;
@@ -253,13 +262,13 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-#header h2 {
-  font-size: 24px;
+#header h5 {
+  font-size: 18px;
   margin-top: 20px;
   color: #FF5733;
 }
 
-#header h2 span {
+#header h5 span {
   color: #ffc107;
   border-bottom: 2px solid #FF5733;
   padding-bottom: 6px;
@@ -274,6 +283,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   display: flex;
 }
+
+#header .short-details{
+  margin-top: 40px;
+  display: flex;
+}
+
+#header .short-details a{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
 
 #header .social-links a {
   font-size: 16px;
@@ -297,8 +327,8 @@ h1, h2, h3, h4, h5, h6 {
   #header h1 {
     font-size: 20px;
   }
-  #header h2 {
-    font-size: 20px;
+  #header h5 {
+    font-size: 16px;
     line-height: 30px;
   }
   #header .social-links {
@@ -455,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #09203a;
 }
 
-#header.header-top .social-links, #header.header-top h2 {
+#header.header-top .social-links, #header.header-top h5 {
   display: none;
 }
 
@@ -516,7 +546,7 @@ section .container {
   }
 }
 
-.section-title h2 {
+.section-title h5 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -528,7 +558,7 @@ section .container {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
+.section-title h5::after {
   content: "";
   width: 120px;
   height: 1px;
